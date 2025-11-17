@@ -12,7 +12,7 @@ jobs:
     # This triggers MANUAL APPROVAL
     environment:
       name: production     # must match your environment name baba
-      url: http://your-ec2-website-url.com   # optional
+    #  url: http://your-ec2-website-url.com   # optional
 
     steps:
       - name: Checkout code
