@@ -8,11 +8,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
-    # This triggers MANUAL APPROVAL
+
     environment:
-      name: production     # must match your environment name baba
-    #  url: http://your-ec2-website-url.com   # optional
+      name: production   # Must match GitHub environment name
 
     steps:
       - name: Checkout code
