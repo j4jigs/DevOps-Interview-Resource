@@ -8,9 +8,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
+    # This triggers MANUAL APPROVAL
     environment:
-      name: production   # This triggers manual approval
-      url: https://your-website-url.com  # Optional
+      name: production     # must match your environment name
+      url: http://your-ec2-website-url.com   # optional
 
     steps:
       - name: Checkout code
