@@ -7,7 +7,7 @@
 <body>
 <div class="container">
 
-    <h1>Welcome to PHP CI/CD Test Page Dipesh and Jignesh</h1>
+    <h1>Welcome to PHP CI/CD Test Page **Dipesh and Jignesh**</h1>
     <p>This page is deployed using GitHub Actions → AWS EC2.</p>
 
     <a href="about.php" class="btn">About Page</a>
