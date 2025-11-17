@@ -9,18 +9,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment:
-      name: production   # This will trigger manual approval
-      url: https://your-production-url   # Optional
+      name: production   # This triggers manual approval
+      url: https://your-website-url.com  # Optional
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: Wait for Approval
-        uses: trstringer/manual-approval@v1
-        with:
-          approvers: jignesh-patel
-          minimum-approvals: 1
 
       - name: Deploy to EC2 via SSH
         uses: appleboy/ssh-action@v1.0.0
